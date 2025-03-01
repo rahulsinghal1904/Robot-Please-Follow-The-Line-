@@ -100,11 +100,6 @@ C++ Compiler (for distance calculation module)
 
 🔹 How to Run the Project
 
-Clone this repository
-
-git clone https://github.com/alksarioglou/embedded_systems_robot_project.git
-cd embedded_systems_robot_project
-
 
 Connect the Arduino board and upload the sketch.
 
