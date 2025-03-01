@@ -9,7 +9,10 @@ This project involves designing and developing an autonomous robot that navigate
 
 ✨ Key Features
 
-✔ PID Controller Implementation – Ensures smooth navigation✔ Real-time Distance Tracking – Accurate to three decimal places✔ Motor & Sensor Interface – Supports precise steering, stopping, and reversing✔ Custom PCB Design – Optimized for sensor performance✔ CAD Modeling – Structurally efficient robot design
+✔ PID Controller Implementation – Ensures smooth navigation
+✔ Real-time Distance Tracking – Accurate to three decimal places
+✔ Motor & Sensor Interface – Supports precise steering, stopping, and reversing
+✔ Custom PCB Design – Optimized for sensor performance✔ CAD Modeling – Structurally efficient robot design
 
 🛠️ Hardware & Components
 
@@ -47,7 +50,7 @@ Integral (I) – Accumulates past errors to correct drift.
 
 Derivative (D) – Predicts and smooths future movement.
 
-PID Algorithm (Implemented in FinalCode - Group 37.cpp)
+PID Algorithm (Implemented in FinalCode)
 
 float Kp = 0.5, Ki = 0.02, Kd = 0.1;
 float error = 0, prevError = 0, integral = 0;
@@ -56,11 +59,8 @@ void PIDControl() {
     error = calculateError();  // Compute deviation from track
     integral += error;
     float derivative = error - prevError;
-    
     float correction = Kp * error + Ki * integral + Kd * derivative;
-    
     adjustMotorSpeed(correction);
-    
     prevError = error;
 }
 
@@ -112,5 +112,7 @@ Tune Kp, Ki, Kd for optimized performance.
 
 🚀 Future Improvements
 
-🔹 Adaptive PID Control – Auto-tune Kp, Ki, and Kd values dynamically.🔹 Obstacle Detection – Add ultrasonic sensors for real-world applications.🔹 Power Optimization – Improve battery life and energy efficiency.
+🔹 Adaptive PID Control – Auto-tune Kp, Ki, and Kd values dynamically.
+🔹 Obstacle Detection – Add ultrasonic sensors for real-world applications.
+🔹 Power Optimization – Improve battery life and energy efficiency.
 
