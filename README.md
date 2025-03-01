@@ -1,6 +1,5 @@
 # Robot-Please-Follow-The-Line-
 
-Autonomous Line-Following Robot
 
 An Arduino-based autonomous robot that follows a white line on a track using reflective sensors and PID controllers. The project integrates motor control, real-time feedback, and precise distance tracking, implemented in C++ and Arduino.
 
@@ -75,18 +74,6 @@ Developed motor control functions for speed adjustments, turning, and stopping.
 
 Integrated sensor feedback to guide movement.
 
-Code available in: Source Code/FinalCode - Group 37.cpp.
-
-📁 Project Structure
-
-📂 Autonomous-Robot-Project/
-│── 📂 Source Code/
-│   ├── distancecalc.cpp         # Distance calculation module
-│   └── FinalCode .cpp           # Main control algorithm
-│── 📂 Schematics/               # Stripboard circuit design
-│── 📂 PCB/                      # Final PCB layout
-│── 📂 Robot_CAD_Models/         # 3D models of the chassis
-│── README.md                    # Project documentation
 
 🛠️ Setup & Installation
 
@@ -117,7 +104,11 @@ Tune Kp, Ki, Kd for optimized performance.
 
 📊 Performance & Results
 
-✅ Successfully follows a white line on various track shapes.✅ PID tuning significantly reduces oscillations.✅ Accurately calculates distance covered.
+✅ Successfully follows a white line on various track shapes.
+
+✅ PID tuning significantly reduces oscillations.
+
+✅ Accurately calculates distance covered.
 
 🚀 Future Improvements
 
