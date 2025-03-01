@@ -52,18 +52,6 @@ Derivative (D) – Predicts and smooths future movement.
 
 PID Algorithm (Implemented in FinalCode)
 
-float Kp = 0.5, Ki = 0.02, Kd = 0.1;
-float error = 0, prevError = 0, integral = 0;
-
-void PIDControl() {
-    error = calculateError();  // Compute deviation from track
-    integral += error;
-    float derivative = error - prevError;
-    float correction = Kp * error + Ki * integral + Kd * derivative;
-    adjustMotorSpeed(correction);
-    prevError = error;
-}
-
 The PID function runs continuously, ensuring real-time course correction.
 
 Optimized Kp, Ki, and Kd values for stability.
